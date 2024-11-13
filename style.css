@@ -1,0 +1,120 @@
+body {
+    background-color: #222222;
+    padding: 5%;
+}
+
+h1, h2, h3, h4, p {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    float: center;
+    text-align: center;
+    color:#fff
+}
+
+.container {
+    position: relative;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.startbutton{
+    background-color: #8c8c8c;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    padding: 15px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    
+}
+
+.startbutton:hover {
+    background-color: #04AA6D; /* Green */
+    color: white;
+  }
+
+.skipbutton{
+    background-color: #ff5447;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    width: 60px;
+    padding: 15px;
+    margin: 10px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.correctbutton{
+    background-color: #47acff;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    width: 60px;
+    padding: 15px;
+    margin: 10px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+select{
+    border-radius: 15px;
+    border-width: 2px;
+    padding: 5px;
+}
+
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    margin: 0 auto;
+
+  }
+
+.popup .popuptext {
+    visibility: hidden;
+    width: 400px;
+    height: 150px;
+    background-color: #4f4f4f;
+    opacity: 90%;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 10px;
+    position: absolute;
+    z-index: 1;
+    bottom: 200%;
+    left: 50%;
+    margin-left: -200px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  .popup .show {
+    visibility: visible;
+    animation: fadeIn 1s
+  }
+
+  /* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }

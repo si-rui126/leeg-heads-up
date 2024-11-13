@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" type="text/javascript" defer></script>
+</head>
+</html>
+
+<html>
+  <body>
+  <div class="center">
+    <!--input id="userInput" type="number" value = "0"/-->
+    <select id="userInput" type="number" value="0">
+      <!--option value="5">5 seconds</option-->
+      <option value="30">30 seconds</option>
+      <option value="60">60 seconds</option>
+      <option value="90">90 seconds</option>
+      <option value="120">120 seconds</option>
+    </select>
+  </div>
+  <p id="timerr" style="font-size: 30px;"> 00 </p>
+
+
+  <h3>Your word is</h3>
+  <h1 id="champ-name" style="font-size: 120px"></h1>
+  <p id="description"></p>
+  
+  <div class="container">
+    <div class="center">
+      <div class="skipbutton" onclick="getchamp(this)">Skip</div>
+      <div class="correctbutton" onclick="correct(this)">Correct</div>
+    </div>
+  </div>
+  
+  <div class="center">
+    <div class="popup">
+      <div class="popuptext" id="myPopup">
+        <h3>Time's Up</h3>
+        <div class="startbutton" onclick = "showpopup()">Okay</div>
+      </div>
+    </div>
+</div>
+  
+  <h3>Score:</h3>
+  <h2 id="score"></h2>
+  <div class="container">
+    <div class="center">
+      <div class="startbutton" onclick="newgame(this); stop(); startTime(this)">New Game</div>
+    </div>
+  </div> 
+  </div> 
+</body>
+</html>
